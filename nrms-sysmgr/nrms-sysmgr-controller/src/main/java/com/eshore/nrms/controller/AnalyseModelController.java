@@ -23,7 +23,7 @@ public class AnalyseModelController {
 	public ModelAndView scoreStuClassList(StuClass stuClass , PageConfig page) {
 		ModelAndView view = new ModelAndView("analyseModel/scoreStuClassList");
 		PageVo<StuClass> stuClassList = this.stuClassService.queryClassList(stuClass, page);
-		System.out.println("打开班级列表");
+		//System.out.println("打开班级列表");
 		view.addObject("page" , stuClassList);
 		view.addObject("searchParam" , stuClass);
 		return view;
